@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dense Model Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Dense Model Results</h1>
+        <h2>Training Accuracy: {{ dense_history['accuracy'][-1] }}</h2>
+        <h2>Validation Accuracy: {{ dense_history['val_accuracy'][-1] }}</h2>
+        <h2>Training Loss: {{ dense_history['loss'][-1] }}</h2>
+        <h2>Validation Loss: {{ dense_history['val_loss'][-1] }}</h2>
+        <a class="btn btn-primary" href="/">Back to Home</a>
+    </div>
+</body>
+</html>
